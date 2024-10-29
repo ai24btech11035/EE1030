@@ -1,0 +1,266 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol}
+
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2009 ME 37-48}
+\author{ai24btech11035 - V.Preethika}
+\maketitle
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[start=37]
+\item A forged steel link with a uniform diameter of 30 mm at the centre is subjected to an axial force that varies from 40 kN in compression to 160 kN in tension. The tensile strength ($S_u$), yield strength ($S_y$), and corrected endurance strength ($S_e$) of the steel material are 600 MPa, 420 MPa, and 240 MPa, respectively.The factor of safety against fatigue endurance as per Soderberg's criterion is
+\begin{enumerate}
+\begin{multicols}{2}
+\item[(A)] 1.26
+\item[(B)] 1.37
+\item[(C)] 1.45
+\item[ (D)] 2.00
+\end{multicols}
+\end{enumerate}
+\item An automatic engine weighing 240kg is supported on four springs with linear characteristics.Each of the two front springs have a stiffness of 16 MN/m while the stiffness of each rear spring is 32 MN/m.The engine speed(in rpm),at which resonance is likely to occur,is
+\begin{enumerate}
+\begin{multicols}{4}
+\item[(A)] 6040
+\item[(B)] 3020
+\item[(C)] 1424
+\item[(D)] 955
+\end{multicols}
+\end{enumerate}
+\item A vehicle suspension system consists of a spring and a damper.The stiffness of the spring is 3.6 kN/m and the damping constant of the damper is 400 Ns/m.If the mass is 50kg,then the damping factor (d) and damping natural frequency $(f_n)$, respectively,are
+\begin{enumerate}
+\begin{multicols}{2}
+\item [(A)] 0.471 and 1.19 Hz
+\item [(B)] 0.471 and 7.48 Hz
+\item [(C)] 0.666 and 1.35 Hz
+\item [(D)] 0.666 and 8.50 Hz
+\end{multicols}
+\end{enumerate}
+\item A frame of two arms of equal length $L$ is shown in adjacent figure.The flexual rigidity of each arm of the frame is $El$.The vertical deflection at the point of application of load $P$ is
+	\begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [short] (4,11.25) -- (4,7.25);
+\draw [short] (3.75,7.25) .. controls (3.75,7.75) and (4.25,7.75) .. (4.25,7.25);
+\draw [short] (2.75,7.25) -- (8.25,7.25);
+\draw [short] (3.75,7.25) -- (5.75,7.25);
+\draw [short] (3.75,7.25) -- (3.75,7);
+\draw [short] (4.25,7.25) -- (4.25,7);
+\draw [short] (3.75,7) -- (4.25,7);
+\draw [short] (4,7.25) -- (4,6.25);
+\draw [short] (4,7) -- (3.75,6.75);
+\draw [short] (3.75,7) -- (3.5,6.75);
+\draw [short] (4.25,7) -- (4,6.75);
+\draw [short] (8.25,7.25) -- (8.25,6.25);
+\draw [<->, >=Stealth] (4,6.5) -- (8.25,6.5);
+\draw [->, >=Stealth] (8.25,9.25) -- (8.25,7.25);
+\draw [short] (4,11.25) -- (2.5,11.25);
+\draw [short] (4.5,11.5) .. controls (4,11.5) and (3.75,11.25) .. (4.5,10.75);
+\draw [short] (4.5,11.5) -- (4.5,10.75);
+\draw [short] (4.5,11.5) -- (4.5,11.25);
+\draw [short] (4.5,11.5) -- (4.75,11.25);
+\draw [short] (4.5,11.25) -- (4.75,11);
+\draw [short] (4.5,11) -- (4.75,10.75);
+\draw [<->, >=Stealth] (3.25,11.25) -- (3.25,7.25);
+\node [font=\normalsize] at (6,6.75) {L};
+\node [font=\normalsize] at (3,9.25) {L};
+\node [font=\normalsize] at (8.5,9.25) {P};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+
+\begin{enumerate}
+\begin{multicols}{4}
+\item[(A)] $\frac{PL^3}{3El}$
+\item[(B)] $\frac{2PL^3}{3El}$
+\item[(C)] $\frac{PL^3}{El}$
+\item[(D)] $\frac{4PL^3}{3El}$
+\end{multicols}
+\end{enumerate}
+\item A uniform rigid rod of mass $M$ and length $L$ is hinged at one end as shown in the adjacent figure.A force $P$ is applied at a distance of $\frac{2L}{3}$ from the hinge so that the rod swings to the right.The reaction at the hinge is
+	\begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\Huge]
+\draw [short] (3.75,11.5) -- (3.75,6.25);
+\draw [short] (4,11.5) -- (4,6.25);
+\draw [short] (3.75,6.25) -- (6,6.25);
+\draw [short] (4,11.5) -- (3.75,11.5);
+\draw [->, >=Stealth] (2.25,7.75) -- (3.75,7.75);
+\draw [<->, >=Stealth] (4.75,11.25) -- (4.75,7.75);
+\draw [<->, >=Stealth] (5.75,11.25) -- (5.75,6.25);
+\draw [short] (4,7.75) -- (4.75,7.75);
+\draw [short] (3.25,11.75) .. controls (3.75,10.75) and (3.75,10.75) .. (4.25,11.75);
+\draw [short] (3.25,11.75) -- (4.25,11.75);
+\draw [short] (3.5,12) -- (3.25,11.75);
+\node [font=\normalsize] at (3,8) {P};
+\node [font=\normalsize] at (6,8.5) {L};
+\node [font=\normalsize] at (5.25,9.25) {2L/3};
+\draw [short] (3.75,12) -- (3.5,11.75);
+\draw [short] (4,12) -- (3.75,11.75);
+\draw [short] (4.25,12) -- (4,11.75);
+\draw [short] (3.75,11.25) -- (5.75,11.25);
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\begin{enumerate}
+\begin{multicols}{4}
+\item[(A)] $-P$
+\item[(B)] 0
+\item[(C)] $\frac{P}{3}$
+\item[(D)] $\frac{2P}{3}$                         
+\end{multicols}
+\end{enumerate}
+\item Match the approaches given below to perform stated kinematics / dynamics analysis of machine.
+	\begin{table}[h]
+		\centering
+	\begin{tabular}{|c|c|} 
+		\hline \textbf{Analysis} & \textbf{Approach} \\ \hline P.Continuous relative rotation & 1.D'Alembert's principle \\ \hline Q.Velocity and acceleration & 2.Grubler's criterion \\ \hline R.Mobility & 3.Grashoff's law \\ \hline S.Dynamic-static analysis & 4.Kennedy's theorem \\ \hline 
+	\end{tabular}
+	\end{table}
+
+\begin{enumerate}
+\begin{multicols}{2}
+\item[(A)] P-1,Q-2,R-3,S-4
+\item[(B)] P-3,Q-4,R-2,S-1
+\item[(C)] P-2,Q-3,R-4,S-1
+\item[(D)] P-4,Q-2,R-1,S-3
+\end{multicols}
+\end{enumerate}
+\item A company uses 2555 units of an item anually.Delivery lead time is 8 days.The reorder point (in number of units) to achieve optimum inventory is 
+\begin{enumerate}
+\begin{multicols}{4}
+\item [(A)] 7
+\item [(B)] 8
+\item [(C)] 56
+\item [(D)] 60
+\end{multicols}
+\end{enumerate}
+\item Consider the following Linear Programming Problem \brak{LPP} :
+	\begin{align}
+		\text{Maximize} &\ z = 3x_1+2x_2 \\
+		\text{Subject to} &\ x_1 \le 4 \\
+		&\ x_2 \le 6 \\
+		&\  3x_1+2x_2 \le 18 \\
+		&\ x_1 \ge 0, x_2 \ge 0  
+	\end{align}
+\begin{enumerate}
+\item [(A)] The LLP has a unique optimal solution 
+\item [(B)] The LLP is infeasible.
+\item [(C)] The LLP is unbounded.
+\item [(D)] The LLP has multiple optimal solutions.
+\end{enumerate}
+\item Six jobs arrived in a sequence as given below.
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|c|c|}
+			\hline \textbf{Jobs} & \textbf{Processing Time \brak{days}} \\ \hline $I$ & 4 \\ \hline $II$ & 9 \\ \hline $III$ & 5 \\ \hline $IV$ & 10 \\ \hline $V$ & 6 \\ \hline $VI$ & 8 \\ \hline
+		\end{tabular}
+	\end{table}
+Average flow time \brak{in days} for the above jobs using Shortest Processing Time rule is 
+\begin{enumerate}
+\begin{multicols}{4}
+\item [(A)] 20.83
+\item [(B)] 23.16
+\item [(C)] 125.00
+\item [(D)] 139.00
+\end{multicols}
+\end{enumerate}
+\item Minimum shear strain in orthogonal turning with a cutting tool of zero rake angle is  
+\begin{enumerate}
+\begin{multicols}{4}
+\item [(A)] 0.0
+\item [(B)] 0.5
+\item [(C)] 1.0
+\item [(D)] 2.0
+\end{multicols}
+\end{enumerate}
+\item Electrochemical machining is performed to remove material from an iron surface of $20 \, \text{mm} \times 20 \, \text{mm}$ under the following conditions:
+	\begin{align}
+		\text{Inter electrode gap} &= 0.2 \, \text{mm} \\
+		\text{Supply voltage} \brak{DC} & =12V \\
+		\text{Specific resistance of electrolyte} &= 2 \, \Omega \\
+		\text{Atomic weight of Iron} &= 55.85 \\
+		\text{Valency of Iron} &=2 \\
+		\text{Faraday's constant} &= 96540 \,\text{Coulombs}
+	\end{align}
+		The material removal rate \brak{in g/s} is
+\begin{enumerate}
+\begin{multicols}{4}
+\item [(A)] 0.3471
+\item [(B)] 3.471
+\item [(C)] 34.71
+\item [(D)] 347.1
+\end{multicols}
+\end{enumerate}
+\item Match the following:
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|c|c|}
+			\hline \textbf{NC Code} & \textbf{Definition} \\ \hline P.M05 & 1.Absolute coordinate system \\ \hline Q.G01 & 2.Dwell \\ \hline R.G04 & 3.Spindle stop \\ \hline S.G90 & 4.Linear interpolation \\ \hline
+		\end{tabular}
+	\end{table}
+\begin{enumerate}
+\begin{multicols}{2}
+\item [(A)] P-2,Q-3,R-4,S-1
+\item [(B)] P-3,Q-4,R-1,S-2
+\item [(C)] P-3,Q-4,R-2,S-1
+\item [(D)] P-4,Q-3,R-2,S-1
+\end{multicols}
+\end{enumerate}
+\end{enumerate}
+\end{document}
+
