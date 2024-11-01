@@ -1,0 +1,189 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry} % Ensure lmodern is loaded for pdflatex
+% Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{multicol}
+
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2019 St 1-13}
+\author{ai24btech11035 - V.Preethika}
+\maketitle
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+\item \[\lim_{n \to \infty} \sum_{k=1}^{n} \frac{n}{n^2 + k^2} \] is equal to
+\begin{enumerate}
+\begin{multicols}{4}
+\item $\frac{e}{3}$
+\item $\frac{5}{6}$
+\item $\frac{3}{4}$
+\item $\frac{\pi}{4}$
+\end{multicols}
+\end{enumerate}
+\item Let $\vec{F} = (x - y + z)(\vec{i} + \vec{j})$ be a vector field on $\mathbb{R}^3$. The line integral $\int_C \vec{F} \cdot d\vec{r}$ where $C$ is the triangle with vertices $(0,0,0)$, $(5,0,0)$, and $(5,5,0)$ traversed in that order.
+\begin{enumerate}
+\begin{multicols}{4}
+\item -25
+\item 25
+\item 50
+\item 5
+\end{multicols}
+\end{enumerate}
+\item Let $\{1,2,3,4\}$ represent the outcomes of a random experiment, and $P(\{1\}) = P(\{2\}) = P(\{3\}) = P(\{4\}) = \frac{1}{4}$. Suppose that $A_1 = \{1,2\}$, $A_2 = \{2,3\}$, $A_3 = \{3,4\}$, and $A_4 = \{1,2,3\}$.Then which of the following statements is true?
+\begin{enumerate}
+\item $A_1$ and $A_2$ are not independent.
+\item $A_3$ and $A_4$ are independent.
+\item $A_1$ and $A_4$ are independent
+\item $A_2$ and $A_4$ are independent
+\end{enumerate}
+\item A fair die is rolled two times independently. Given that the outcome on the first roll is 1, 
+the expected value of the sum of the two outcomes is
+\begin{enumerate}
+\begin{multicols}{4}
+\item 4
+\item 4.5
+\item 3
+\item 5.5
+\end{multicols}
+\end{enumerate}
+\item The dimension of the vector space of $7 \times 7$ real symmetric matrices with trace zero and the sum of the off-diagonal elements zero is 
+\begin{enumerate}
+\begin{multicols}{4}
+\item 47
+\item 28
+\item 27
+\item 26
+\end{multicols}
+\end{enumerate}
+\item Let $A$ be a $6 \times 6$ complex matrix with $A^3 \neq 0$ and $A^4 = 0$.Then the number of Jordan blocks of $A$ is 2.
+\begin{enumerate}
+\begin{multicols}{4}
+\item 1 or 6
+\item 2 or 3
+\item 4
+\item 5
+\end{multicols}
+\end{enumerate}
+\item Let $X_1$, \ldots, $X_n$ be a random sample from a uniform distribution defined over $\brak{0, \theta}$,where $\theta > 0$ and $n \geq 2$.$X_{(1)} = \min\{X_1, \ldots, X_n\}$ and $X_{(n)} = \max\{X_1, \ldots, X_n\}$.Then the covariance between $X_{(n)}$ and $\frac{X_{(1)}}{X_{(n)}}$ is
+\begin{enumerate}
+\begin{multicols}{4}
+\item 0
+\item $n\brak{n+1}\theta$
+\item $n\theta$
+\item $n^2\brak{n+1}\theta$
+\end{multicols}
+\end{enumerate}
+\item $X_1$, \ldots, $X_n$ be a random sample drawn from a population with probability density function $f\brak{x; \theta} = \theta x^{\theta - 1}, \; 0 \leq x \leq 1, \; \theta > 0$.Then the maximum likelihood estimator of $\theta$ is given by 
+\begin{enumerate}
+\begin{multicols}{2}
+\item $\frac{-n}{\sum_{i=1}^{n} \log_e X_i}$
+\item $\frac{-\sum_{i=1}^{n} \log_e X_i}{n}$
+\item $\brak{ \prod_{i=1}^{n} X_i }^{\frac{1}{n}}$
+\item $\frac{\prod_{i=1}^{n} X_i}{n}$ 
+\end{multicols}
+\end{enumerate}
+\item $Y_i = \beta_0 + \beta_1 x_{1i} + \beta_2 x_{2i} + \epsilon_i,$for $i = 1, \ldots, 10,$where $x_{1i}$ and $x_{2i}$ are fixed covariates, and $\epsilon_i$ are uncorrelated random variables with mean 0 and unknown variance $\sigma^2$. Here $\beta_0$, $\beta_1$, and $\beta_2$ are unknown parameters. Further, define $\hat{Y}_i = \hat{\beta}_0 + \hat{\beta}_1 x_{1i} + \hat{\beta}_2 x_{2i},$ where $(\hat{\beta}_0, \hat{\beta}_1, \hat{\beta}_2)$ is the unbiased least squares estimator of $(\beta_0, \beta_1, \beta_2)$. Then an unbiased estimator of $\sigma^2$ is given by 
+\begin{enumerate}
+\begin{multicols}{4}
+\item $\frac{\brak{ \sum_{i=1}^{10} (Y_i - \hat{Y}_i)^2 }}{10}$
+\item $\frac{\brak{ \sum_{i=1}^{10} (Y_i - \hat{Y}_i)^2 }}{7}$
+\item $\frac{\brak{ \sum_{i=1}^{10} (Y_i - \hat{Y}_i)^2 }}{8}$
+\item $\frac{\brak{ \sum_{i=1}^{10} (Y_i - \hat{Y}_i)^2 }}{9}$
+\end{multicols}
+\end{enumerate}
+\item For i = 1, 2, 3, let $Y_i = \alpha + \beta x_i + \epsilon_i$,where $x_i$ are fixed covariates, and  $\epsilon_i$ are independent and identically distributed standard normal random variables. Here, $\alpha$ and $\beta$ are unknown parameters. Given the following observations \begin{table}[h!]
+        \centering
+  \input{tables/table1.tex}
+\end{table}
+the best linear unbiased estimate of $\alpha + \beta$ is equal to
+\begin{enumerate}
+\begin{multicols}{4}
+\item 1.5
+\item 1
+\item 1.8
+\item 2.1
+\end{multicols}
+\end{enumerate}
+\item Consider a discrete time Markov chain on the state space $\{1,2,3\}$ with one-step transition 
+probability matrix 
+$\begin{pmatrix}
+   & 1 & 2 & 3 \\
+1 & 0.7 & 0.3 & 0.0 \\
+2 & 0.0 & 0.6 & 0.4 \\
+3 & 0.0 & 0.0 & 1.0 \\ 
+\end{pmatrix}$.Which of the following statements is true?
+\begin{enumerate}
+\item States 1, 3 are recurrent and state 2 is transient.
+\item State 3 is recurrent and states 1, 2 are transient.
+\item States 1, 2, 3 are recurrent.
+\item States 1, 2 are recurrent and state 3 is transient.
+\end{enumerate}
+\item The minimal polynomial of the matrix $\begin{bmatrix}
+1 & 1 & 2 & 0 \\
+0 & 2 & 1 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 2 \\
+\end{bmatrix}$ is
+\begin{enumerate}
+\item $\brak{x-1}\brak{x-2}$
+\item $\brak{x-1}^2\brak{x-2}$
+\item $\brak{x-1}\brak{x-2}^2$
+\item $\brak{x-1}^2\brak{x-2}^2$
+\end{enumerate}
+\item Let $\{X_1, X_2, X_3\}$ be a trivariate normal random vector with mean vector $\brak{-3,1,4}$ and variance-covariance matrix $\begin{pmatrix} 4 & 0 & 0 \\ 0 & 3 & -3 \\ 0 & -3 & 4 \end{pmatrix}$.Which of the following statements are true?
+\begin{align*}
+(i) & \; X_2 \text{ and } X_3 \text{ are independent.} \\ 
+(ii) & \; X_1 + X_3 \text{ and } X_2 \text{ are independent.} \\ 
+(iii) & \; (X_2, X_3) \text{ and } X_1 \text{ are independent.} \\ 
+(iv) & \; \frac{1}{2}(X_2 + X_3) \text{ and } X_1 \text{ are independent.} 
+\end{align*}
+\begin{enumerate}
+\begin{multicols}{4}
+\item (i) and (iii)
+\item (ii) and (iii)
+\item (i) and (iv)
+\item (iii) and (iv)
+\end{multicols}
+\end{enumerate}
+\end{enumerate}
+\end{document}
