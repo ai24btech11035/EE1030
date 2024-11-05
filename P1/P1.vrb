@@ -1,2 +1,0 @@
-\frametitle{Python Code}
-\lstinputlisting[label=mycode1]{codes/plot.py}
